@@ -611,46 +611,39 @@ git reset HEAD *.class
 ## 10. Repositorios remotos: GitHub
 
 ```bash
- git clone https://github.com/Drin3780/MiPrueba
-```
-```text
-Cloning into 'MiPrueba'...
-info: please complete authentication in your browser...
-remote: Enumerating objects: 6, done.
-remote: Counting objects: 100% (6/6), done.
-remote: Compressing objects: 100% (4/4), done.
-remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-Receiving objects: 100% (6/6), done.
+git remote add origin https://github.com/Drin3780/MiPrueba
 ```
 
 ```bash
-git push -u MiPrueba master
+git branch -M main
+```
+
+```bash
+git push -u origin main
 ```
 ```text
-Enumerating objects: 26, done.
-Counting objects: 100% (26/26), done.
+Enumerating objects: 32, done.
+Counting objects: 100% (32/32), done.
 Delta compression using up to 6 threads
-Compressing objects: 100% (18/18), done.
-Writing objects: 100% (26/26), 2.36 KiB | 402.00 KiB/s, done.
-Total 26 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
-To MiPrueba
- * [new branch]      master -> master
-branch 'master' set up to track 'MiPrueba/master'.
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (30/30), 2.86 KiB | 418.00 KiB/s, done.
+Total 30 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/Drin3780/MiPrueba
+   37e211a..3b0478f  main -> main
+branch 'main' set up to track 'origin/main'.
 ```
 
 ```bash
-git pull MiPrueba main --allow-unrelated-histories
+git push -u origin Prueba
 ```
 ```text
-remote: Enumerating objects: 6, done.
-remote: Counting objects: 100% (6/6), done.
-remote: Compressing objects: 100% (4/4), done.
-remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0 (from 0)
-Unpacking objects: 100% (6/6), 4.47 KiB | 182.00 KiB/s, done.
-From MiPrueba
- * branch            main       -> FETCH_HEAD
-Merge made by the 'ort' strategy.
- README.md | 612 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- 1 file changed, 612 insertions(+)
- create mode 100644 README.md
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'Prueba' on GitHub by visiting:
+remote:      https://github.com/Drin3780/MiPrueba/pull/new/Prueba
+remote:
+To https://github.com/Drin3780/MiPrueba
+ * [new branch]      Prueba -> Prueba
+branch 'Prueba' set up to track 'origin/Prueba'.
 ```
